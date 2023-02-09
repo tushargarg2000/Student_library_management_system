@@ -15,7 +15,6 @@ public class Card {
     //Plan is to save this card in Db.
     //Before saving I have to set its attributes : Rule 1
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;  //Its auto generated

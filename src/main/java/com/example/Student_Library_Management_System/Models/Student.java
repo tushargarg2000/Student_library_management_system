@@ -28,6 +28,19 @@ public class Student {
     //Name of variable of the Parent Entity that you have written in child class foreign key attr.
     @OneToOne(mappedBy = "studentVariableName",cascade = CascadeType.ALL)
     private Card card;
+    /*
+        Steps to find that variable
+
+        1. Go the child class (In this case)
+        2. Out of all the attributes select the foreign key attribute that is helping you connect
+        with parent class
+        (Ref :  @OneToOne
+                @JoinColumn
+                private Student studentVariableName;
+        )
+        3. Choose the variable name of the parentEnty (reference : studentVariableName)
+     */
+
 
     public Card getCard() {
         return card;
