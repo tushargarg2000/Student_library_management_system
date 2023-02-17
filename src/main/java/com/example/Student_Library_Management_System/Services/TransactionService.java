@@ -92,12 +92,14 @@ public class TransactionService {
         issuedBooksForCard.add(book);
         card.setBooksIssued(issuedBooksForCard);
 
+        for(Book b: issuedBooksForCard){
+            System.out.println(b.getName());
+        }
 
         //Card and the Transaction : bidirectional (parent class)
         List<Transactions> transactionsListForCard = card.getTransactionsList();
         transactionsListForCard.add(transaction);
         card.setTransactionsList(transactionsListForCard);
-
 
         //save the parent.
         cardRepository.save(card);

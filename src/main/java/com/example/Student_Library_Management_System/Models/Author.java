@@ -1,6 +1,7 @@
 package com.example.Student_Library_Management_System.Models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
